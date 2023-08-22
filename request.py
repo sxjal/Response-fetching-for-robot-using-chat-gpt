@@ -1,8 +1,11 @@
 import openai
 import getkey as k
+from playsound import playsound as play
+
 openai.api_key = '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'
 messages = [ {"role": "system", "content":
 			"You are a intelligent assistant."} ]
+
 while True:
 	message = input("User : ")
 	if message:
